@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>马春钰 | Personal Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=Noto+Sans+SC:wght@400;500;700;900&family=Ma+Shan+Zheng&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles_opt2.css" />
+</head>
+<body>
+  <main class="page" data-node-id="0:1">
+    <section class="screen hero-screen">
+      <img class="hero-edge hero-blackstar" src="./assets/blackstar.svg" alt="" aria-hidden="true" />
+      <img class="hero-edge hero-sticker" src="./assets/sticker.svg" alt="" aria-hidden="true" />
+      <img class="hero-edge hero-stamp" src="./assets/stamp.png" alt="" aria-hidden="true" />
+      <img class="hero-edge hero-spring" src="./assets/spring.svg" alt="" aria-hidden="true" />
+      <div class="hero-inner">
+        <button class="notebook" id="heroNotebook" type="button" aria-label="打开照片本" aria-expanded="false">
+          <img src="./assets/notebook-open.png" alt="" class="notebook-open" aria-hidden="true" />
+          <img src="./assets/notebook-cover.png" alt="照片本封面" class="notebook-cover" />
+          <span class="notebook-tap-hint" aria-hidden="true"></span>
+        </button>
+        <div class="hero-text">
+          <div class="hero-title-art" aria-label="马春钰标题字效">
+            <img class="title-img title-hello" src="./assets/hello.png" alt="HELLO! I AM" />
+            <img class="title-img title-cn" src="./assets/cn.png" alt="马春钰" />
+            <img class="title-img title-en" src="./assets/en.png" alt="MA CHUNYU" />
+          </div>
+          <p class="sub">南京大学英语笔译硕士（2027届）</p>
+          <div class="hero-contact" aria-label="联系方式图标">
+            <button class="contact-icon contact-trigger" type="button" data-contact="email" aria-label="邮箱" aria-expanded="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 6.5h18v11H3z" fill="none" stroke="currentColor" stroke-width="1.8"/>
+                <path d="m4.5 8 7.5 6 7.5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="contact-icon contact-trigger" type="button" data-contact="wechat" aria-label="微信" aria-expanded="false">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9.2 5.2c-3.8 0-6.7 2.5-6.7 5.9 0 1.8.8 3.3 2.3 4.4l-.7 2.6 2.8-1.4c.7.2 1.5.3 2.3.3 3.7 0 6.7-2.5 6.7-5.9s-3-5.9-6.7-5.9Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M15.7 10.2c-3.1 0-5.6 2-5.6 4.8 0 1.3.6 2.5 1.7 3.3l-.5 2.1 2.2-1.1c.7.2 1.4.2 2.1.2 3.1 0 5.6-2 5.6-4.8s-2.5-4.5-5.5-4.5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <circle cx="7.6" cy="10.9" r="0.8" fill="currentColor"/>
+                <circle cx="11" cy="10.9" r="0.8" fill="currentColor"/>
+                <circle cx="14.4" cy="15" r="0.8" fill="currentColor"/>
+                <circle cx="17.7" cy="15" r="0.8" fill="currentColor"/>
+              </svg>
+            </button>
+          </div>
+          <div class="contact-badge" id="contactBadge" hidden aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen journey-screen">
+      <img class="journey-corner corner-edu-top-left" src="./assets/education-corner-1.png" alt="" aria-hidden="true" />
+      <img class="journey-corner corner-int-bottom-left" src="./assets/education-corner-2.png" alt="" aria-hidden="true" />
+      <img class="journey-corner corner-edu-bottom-right" src="./assets/education-corner-3.png" alt="" aria-hidden="true" />
+      <h2 class="edu-title">EDUCATION</h2>
+      <p class="edu-note edu-left">
+        南京大学 | 英语笔译硕士（2024.09 - 2027.06）<br />
+        南开大学 | 翻译（本科）
+      </p>
+      <img class="education-frame3" src="./assets/education-photo.png" alt="教育经历照片墙" />
+      <h2 class="intern-title">INTERSHIP</h2>
+      <p class="edu-note intern-note-right">
+        Momenta 企业文化（2025.12 - 2026.03）<br />
+        扇贝 APP 内容运营（2025.06 - 2025.09）<br />
+        商务部国际官员研修学院项目助理（2023.10 - 2023.11）
+      </p>
+
+      <img class="journey-collage" src="./assets/frame-2.png" alt="相纸布局占位图" />
+    </section>
+
+    <section class="screen work-screen">
+      <div class="work-left">
+        <h2>VIEW MY<br />WORK</h2>
+        <div class="wheel-wrap" id="wheelWrap" aria-label="颜色选择">
+          <div class="color-wheel" id="colorWheel">
+            <button class="wheel-knob" id="wheelKnob" aria-label="颜色拖动点"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="work-grid" id="workGrid">
+        <button class="work-paper" data-title="作品 01"><span class="work-placeholder"></span></button>
+        <button class="work-paper" data-title="作品 02"><span class="work-placeholder"></span></button>
+        <button class="work-paper" data-title="作品 03"><span class="work-placeholder"></span></button>
+        <button class="work-paper" data-title="作品 04"><span class="work-placeholder"></span></button>
+        <button class="work-paper" data-title="作品 05"><span class="work-placeholder"></span></button>
+        <button class="work-paper" data-title="作品 06"><span class="work-placeholder"></span></button>
+      </div>
+    </section>
+
+    <section class="screen chat-screen">
+      <div class="chat-shell">
+        <h2>DIGITAL AVATAR</h2>
+        <div class="chat-container">
+          <div id="chatLog" class="chat-log" aria-live="polite">
+            <div class="bubble bot">你好，我是马春钰的数字分身，欢迎提问。</div>
+          </div>
+          <form class="chat-form" id="chatForm">
+            <input id="chatInput" type="text" maxlength="120" placeholder="输入问题，例如：你最近在做什么？" required />
+            <button type="submit">发送</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="image-modal" id="imageModal" aria-hidden="true">
+    <button class="modal-close" id="modalClose" aria-label="关闭">×</button>
+    <div class="modal-paper"><div class="work-placeholder"></div></div>
+    <p id="modalCaption"></p>
+  </div>
+
+  <script src="./script_opt2.js"></script>
+</body>
+</html>
